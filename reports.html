@@ -78,7 +78,7 @@
                     by <a href="#">Luis Omar</a>
                 </p>
                 <div class="panel panel-default">
-                  <div class="panel-heading">
+                  <div class="panel-heading" id="report1">
                     <button type="button" class="btn btn-default" aria-label="Left Align">
                       <span class="glyphicon glyphicon-eye-open" aria-hidden="true">8-Puzzle</span>
                     </button>
@@ -95,6 +95,7 @@
                 <!-- Blog Comments -->
 
                 <!-- Comments Form -->
+                <!--
                 <div class="well">
                     <h4>Agregar Comentario:</h4>
                     <form role="form">
@@ -104,7 +105,7 @@
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
                 </div>
-
+                -->
                 <!--<hr>-->
 
                 <!-- Posted Comments -->
@@ -175,7 +176,13 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script type="text/javascript">
+        $("#report1").click(function(event) {
+            /* Act on the event */
+             window.location.href = "reportes/puzzle.html";
+        });
+       
+    </script>
 </body>
 
 </html>
